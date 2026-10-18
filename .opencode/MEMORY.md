@@ -2,13 +2,12 @@
 
 ## Purpose / state
 
-Empty greenfield project at `C:\VIBE_CODE_CENTRAL\ChickenLoop`. No source code, **not a git repository**, no git remote.
+Greenfield project at `C:\VIBE_CODE_CENTRAL\ChickenLoop`, public GitHub repo `Chickenman67/ChickenLoop` (created 2026-10-18, branch `master`, local auth via `gh` as Chickenman67). No source code yet.
 
 ## Decisions
 
 - **Issue tracker: GitHub** (chosen 2026-10-18), via the `gh` CLI. Config in `docs/agents/issue-tracker.md`.
-  - *Gotcha:* `gh` infers the repo from `git remote -v`, which doesn't exist yet. Until `git init` + a GitHub remote is added, every `gh` call will fail. A warning block sits at the top of `issue-tracker.md`.
-  - The five triage labels have **not** been created on GitHub for the same reason. Run `gh label create <name>` for each once a remote exists.
+  - The five triage labels are **created** on the remote. `wontfix` was pre-seeded by GitHub and was edited to our wording.
   - `PRs as a request surface` is **off**.
 - **Triage labels: defaults kept** — `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
 - **Domain docs: single-context** — one `GLOSSARY.md` and one `docs/adr/` at the repo root. See `docs/agents/domain.md`.
@@ -23,4 +22,4 @@ Empty greenfield project at `C:\VIBE_CODE_CENTRAL\ChickenLoop`. No source code, 
 
 ## Next step
 
-`git init`, add a GitHub remote, push, then create the five triage labels. Until then the issue tracker config is written but not operational.
+`GLOSSARY.md` and `docs/adr/` don't exist yet; `/domain-modeling` creates them lazily. Next real work is deciding what ChickenLoop actually is.

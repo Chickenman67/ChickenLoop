@@ -1,8 +1,6 @@
 # Issue tracker: GitHub
 
-> **Not yet wired up.** This directory is not a git repository and has no remote,
-> so `gh` cannot infer which repo to operate on. Run `git init`, add a GitHub
-> remote, and push before using `gh issue ...`. Everything below assumes that.
+> Repo: `Chickenman67/ChickenLoop` (public). `gh` infers it from the git remote.
 
 Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all operations.
 
